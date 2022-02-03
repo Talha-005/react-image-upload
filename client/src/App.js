@@ -31,7 +31,7 @@ function App() {
           <input type={'file'} name='file' onChange={(e) => setImage(e.target.files[0])} />
           <button type='submit'>UPLOAD</button>
         </form>
-        <img src={`https://react-image-upload-opal.vercel.app${url}`} className="App-logo" alt="logo" />
+        <img src={`http://localhost:4000${url}`} className="App-logo" alt="logo" />
       </header>
     </div>
   );
