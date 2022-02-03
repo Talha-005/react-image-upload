@@ -7,6 +7,7 @@ function App() {
   const [url, setURL] = useState('');
 
   const uploadImage = async (data) => {
+    
     const res = await singleFileUpload(data);
     if (parseInt(res.status) === 201) {
       console.log('Data ', res.data);
