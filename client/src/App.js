@@ -7,7 +7,7 @@ function App() {
   const [url, setURL] = useState('');
 
   const uploadImage = async (data) => {
-    
+
     const res = await singleFileUpload(data);
     if (parseInt(res.status) === 201) {
       console.log('Data ', res.data);
@@ -31,7 +31,7 @@ function App() {
           <input type={'file'} name='file' onChange={(e) => setImage(e.target.files[0])} />
           <button type='submit'>UPLOAD</button>
         </form>
-        <img src={`http://localhost:4000${url}`} className="App-logo" alt="logo" />
+        <img src={`https://react-image-upload-opal.vercel.app${url}`} className="App-logo" alt="logo" />
       </header>
     </div>
   );
